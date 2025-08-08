@@ -71,15 +71,15 @@ header .join-us-btn::before {
     top: -3px;
     bottom: -3px;
     background: linear-gradient(to right, var(--color-secondary), var(--color-accent), var(--color-tertiary));
-    background-size: 400% 100%;
+    background-size: 400%;
     background-position: left center;
-    animation: move-gradient 8s ease-in-out infinite alternate both;
+    animation: move-gradient 5s ease-in-out infinite alternate both;
     border-radius: 40px;
     -webkit-border-radius: 40px;
     -moz-border-radius: 40px;
     -ms-border-radius: 40px;
     -o-border-radius: 40px;
-    -webkit-animation: move-gradient 8s ease-in-out infinite alternate both;
+    -webkit-animation: move-gradient 5s ease-in-out infinite alternate both;
 }
 
 header .join-us-btn:hover::after {
