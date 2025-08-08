@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Righteous&display=swap');
+
+:root {
+    --color-background: #020003;
+    --color-text: #a1887a;
+    --color-text-bright: #FFF0C0;
+    --color-primary: #f7b015;
+    --color-secondary: #d3232c;
+    --color-tertairy: #FAFF00;
+    --color-accent: #02A9EA;
+    --text-bold: "Anta", sans-serif;
+    --text-main: "Righteous", sans-serif;
+}
