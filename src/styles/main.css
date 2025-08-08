@@ -6,8 +6,26 @@
     --color-text-bright: #FFF0C0;
     --color-primary: #f7b015;
     --color-secondary: #d3232c;
-    --color-tertairy: #FAFF00;
+    --color-tertiary: #FAFF00;
     --color-accent: #02A9EA;
-    --text-bold: "Anta", sans-serif;
-    --text-main: "Righteous", sans-serif;
+    --color-muted: #0b1d4e;
+    --font-bold: "Anta", sans-serif;
+    --font-main: "Righteous", sans-serif;
+}
+
+* {
+    border: none;
+    padding: none;
+    margin: 0;
+    background: transparent;
+    font-family: var(--font-main);
+    font-weight: 400;
+    line-height: 120%;
+    word-spacing: 1.8px;
+    letter-spacing: 1.2px;
+    color: var(--color-text-bright);
+}
+
+h2, h3, p {
+    max-width: 45ch;
 }
