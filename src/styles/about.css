@@ -1,0 +1,39 @@
+main {
+    background-color: var(--color-background);
+    overflow: hidden;
+}
+
+.about {
+    min-height: 100dvh;
+    background-color: var(--color-background);
+    position: relative;
+    overflow: hidden;
+}
+
+.about::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(in lch 60deg, var(--color-accent), var(--color-muted), var(--color-secondary));
+    filter: url('#displacementFilter');
+    -webkit-filter: url('#displacementFilter');
+    opacity: 0.5;
+}
+
+.about::before {
+    content: '';
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 50% 34% 5% 29px;
+    -webkit-border-radius: 50% 34% 25% 200px / 30% 90% 20% 40%;
+    -moz-border-radius: 50% 34% 5% 29px;
+    -ms-border-radius: 50% 34% 5% 29px;
+    -o-border-radius: 50% 34% 5% 29px;
+    background-color: var(--color-tertiary);
+    bottom: 20px;
+    right: 50px;
+    filter: blur(200px);
+    -webkit-filter: blur(200px);
+    opacity: 0.4;
+}
