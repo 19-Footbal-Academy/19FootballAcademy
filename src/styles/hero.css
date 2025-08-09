@@ -129,6 +129,7 @@ header .join-us-btn:hover::after {
     -moz-transition: transform 300ms ease-in-out;
     -ms-transition: transform 300ms ease-in-out;
     -o-transition: transform 300ms ease-in-out;
+    box-shadow: inset 3px 2px 5px rgb(228, 176, 176), inset -3px -2px 5px rgb(17, 0, 0);
 }
 
 .hero-text .join-us-btn:hover {
