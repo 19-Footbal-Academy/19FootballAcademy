@@ -28,22 +28,30 @@
         </div>
     </section>
     <main>
-        <section class="about"></section>
+        <section class="about">
+            <div>
+                <h2>Redefining the future of soccer</h2>
+                <p>19 Football Academy is an academy setup to provide technical, tactical, physical and mental skill for
+                    young
+                    players who are capable of competing in various levels.</p>
+            </div>
+
+            <div class="about-image-block">
+                <div class="blobs"><div class="blob-one"></div>
+                <div class="blob-two"></div>
+                <div class="blob-three"></div>
+                <div class="blob-four"></div></div>
+                <img class="about-image-player" src="public/images/soccer player.png" alt="19 academy jersey">
+            </div>
+        </section>
+
         <svg width="0" height="0" viewBox="0 0 220 220" xmlns="http://www.w3.org/2000/svg">
             <filter id="displacementFilter">
-                <feTurbulence 
-                type="fractalNoise" 
-                baseFrequency="0.6 0.2" 
-                seed="10"
-                numOctaves="20" 
-                result="turbulence" />
+                <feTurbulence type="fractalNoise" baseFrequency="0.8 0.3" seed="10" numOctaves="5"
+                    result="turbulence" />
 
-                <feDisplacementMap 
-                in2="turbulence" 
-                in="SourceGraphic" 
-                scale="20000" 
-                xChannelSelector="B"
-                yChannelSelector="G" />
+                <feDisplacementMap in2="turbulence" in="SourceGraphic" scale="50000" xChannelSelector="G"
+                    yChannelSelector="G" />
             </filter>
     </main>
 </body>
