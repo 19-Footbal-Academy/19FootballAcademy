@@ -7,6 +7,7 @@
     <link rel="shortcut icon" href="public/images/19 Football Academy.jpg" type="image/jpg">
     <link rel="stylesheet" href="src/styles/main.css">
     <link rel="stylesheet" href="src/styles/hero.css">
+    <link rel="stylesheet" href="src/styles/about.css">
     <title>19 Football Academy</title>
 </head>
 
@@ -26,6 +27,25 @@
 
         </div>
     </section>
+    <main>
+        <section class="about"></section>
+        <svg width="0" height="0" viewBox="0 0 220 220" xmlns="http://www.w3.org/2000/svg">
+            <filter id="displacementFilter">
+                <feTurbulence 
+                type="fractalNoise" 
+                baseFrequency="0.6 0.2" 
+                seed="10"
+                numOctaves="20" 
+                result="turbulence" />
+
+                <feDisplacementMap 
+                in2="turbulence" 
+                in="SourceGraphic" 
+                scale="20000" 
+                xChannelSelector="B"
+                yChannelSelector="G" />
+            </filter>
+    </main>
 </body>
 
 </html>
