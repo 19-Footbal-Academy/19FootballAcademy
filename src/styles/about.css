@@ -8,7 +8,64 @@ main {
     background-color: var(--color-background);
     position: relative;
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    padding-inline: 3.5rem;
 }
+
+.about-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    z-index: 4;
+    transform: translateX(60px);
+    -webkit-transform: translateX(60px);
+    -moz-transform: translateX(60px);
+    -ms-transform: translateX(60px);
+    -o-transform: translateX(60px);
+    align-items: flex-start;
+}
+
+.about-text button {
+    padding: 15px 20px;
+    border-radius: 50px;
+    background-color: var(--color-secondary);
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    font-family: var(--font-bold);
+    font-size: 1.05rem;
+    text-transform: capitalize;
+    box-shadow: inset 3px 2px 5px rgb(228, 176, 176), inset -3px -2px 5px rgb(17, 0, 0);
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    -ms-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+}
+.about-text button:hover {
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+}
+
+.about h2 {
+    font-family: var(--font-bold);
+    text-transform: uppercase;
+    color: var(--color-primary);
+    font-weight: 900;
+    font-size: 2.5rem;
+}
+
+.about p {
+    font-size: 1.1rem;
+    line-height: 130%;
+}
+
 
 .about::after {
     content: '';
@@ -35,7 +92,23 @@ main {
     right: 50px;
     filter: blur(200px);
     -webkit-filter: blur(200px);
-    opacity: 0.4;
+    opacity: 0.6;
+}
+
+.blur-circle {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 50% 34% 5% 29px;
+    -webkit-border-radius: 50% 34% 25% 200px / 30% 90% 20% 40%;
+    -moz-border-radius: 50% 34% 5% 29px;
+    -ms-border-radius: 50% 34% 5% 29px;
+    -o-border-radius: 50% 34% 5% 29px;
+    background-color: var(--color-secondary);
+    top: 0px;
+    left: -50px;
+    filter: blur(180px);
+    -webkit-filter: blur(180px);
 }
 
 .about-image-block {
