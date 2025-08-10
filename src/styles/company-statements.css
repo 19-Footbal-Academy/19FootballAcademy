@@ -1,3 +1,36 @@
 .company-statements {
-    min-height: 100vh;
+    height: 100vh;
+    background-color: var(--color-primary);
+    display: grid;
+    grid-template-columns: 0.8fr 1fr;
+    grid-template-rows: 50px 1fr 50px 1fr;
+    gap: 2px;
+}
+
+.company-statements div {
+    background-color: var(--color-background);
+}
+
+.company-statements div:nth-child(5) {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 5;
+}
+
+.company-statements div:first-child {
+    border-top: 2px solid var(--color-primary);
+
+}
+
+.company-statements h3 {
+    color: var(--color-accent);
+    font-family: var(--font-bold);
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    vertical-align: center;
+    line-height: 50px;
+    letter-spacing: 2px;
 }
