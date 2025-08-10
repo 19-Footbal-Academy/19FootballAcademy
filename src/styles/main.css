@@ -2,7 +2,7 @@
 
 :root {
     --color-background: #020003;
-    --color-text: #a1887a;
+    --color-text: #c9ac9c;
     --color-text-bright: #FFF0C0;
     --color-primary: #f7b015;
     --color-secondary: #d3232c;
@@ -39,4 +39,5 @@ p {
     color: transparent;
     font-weight: 800;
     -webkit-background-clip: text;
+    text-transform: uppercase;
 }

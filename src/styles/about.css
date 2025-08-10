@@ -64,6 +64,7 @@ main {
 .about p {
     font-size: 1.1rem;
     line-height: 130%;
+    color: var(--color-text);
 }
 
 
