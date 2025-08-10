@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="src/styles/main.css">
     <link rel="stylesheet" href="src/styles/hero.css">
     <link rel="stylesheet" href="src/styles/about.css">
+    <link rel="stylesheet" href="src/styles/company-statements.css">
     <title>19 Football Academy</title>
 </head>
 
@@ -32,7 +33,8 @@
             <div class="blur-circle"></div>
             <div class="about-text">
                 <h2>Redefining the future of soccer</h2>
-                <p><span class="company-name">19 Football Academy</span> is an academy setup to provide technical, tactical, physical and mental skill for
+                <p><span class="company-name">19 Football Academy</span> is an academy setup to provide technical,
+                    tactical, physical and mental skill for
                     young
                     players who are capable of competing in various levels.</p>
                 <button>explore our mission</button>
@@ -47,16 +49,24 @@
                 </div>
                 <img class="about-image-player" src="public/images/soccer player.png" alt="19 academy jersey">
             </div>
+            <svg width="0" height="0" viewBox="0 0 220 220" xmlns="http://www.w3.org/2000/svg">
+                <filter id="displacementFilter">
+                    <feTurbulence type="fractalNoise" baseFrequency="0.8 0.3" seed="10" numOctaves="5"
+                        result="turbulence" />
+
+                    <feDisplacementMap in2="turbulence" in="SourceGraphic" scale="30000" xChannelSelector="G"
+                        yChannelSelector="B" />
+                </filter>
+            </svg>
         </section>
 
-        <svg width="0" height="0" viewBox="0 0 220 220" xmlns="http://www.w3.org/2000/svg">
-            <filter id="displacementFilter">
-                <feTurbulence type="fractalNoise" baseFrequency="0.8 0.3" seed="10" numOctaves="5"
-                    result="turbulence" />
-
-                <feDisplacementMap in2="turbulence" in="SourceGraphic" scale="50000" xChannelSelector="G"
-                    yChannelSelector="G" />
-            </filter>
+        <section class="company-statements">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </section>
     </main>
 </body>
 
