@@ -5,6 +5,7 @@
     grid-template-columns: 0.8fr 1fr;
     grid-template-rows: 50px 1fr 50px 1fr;
     gap: 2px;
+    border-block: 2px solid var(--color-primary);
 }
 
 .company-statements>div {
@@ -75,9 +76,6 @@
     padding: 5px;
     font-weight: 900;
     font-family: var(--font-bold);
-}
-.company-statements>div:first-child {
-    border-top: 2px solid var(--color-primary);
 }
 
 .company-statements>div:nth-child(2) {
