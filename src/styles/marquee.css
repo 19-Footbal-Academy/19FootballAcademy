@@ -1,0 +1,144 @@
+.marquee-block {
+    padding-block: 7rem;
+    background: var(--color-muted);
+}
+
+.marquee-parent {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.marquee {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: max-content;
+    gap: 1.5rem;
+}
+
+.marquee ul {
+    display: inline-flex;
+    gap: 1.5rem;
+    align-items: center;
+    animation: marquee 15s linear infinite;
+    -webkit-animation: marquee 15s linear infinite;
+}
+
+.marquee:nth-child(2) ul {
+    transform: translateX(-80.8%);
+    -webkit-transform: translateX(-80.8%);
+    -moz-transform: translateX(-80.8%);
+    -ms-transform: translateX(-80.8%);
+    -o-transform: translateX(-80.8%);
+    animation: marquee-back 15s linear infinite;
+    -webkit-animation: marquee-back 15s linear infinite;
+}
+
+.marquee ul li {
+    flex-shrink: 0;
+}
+
+.marquee img {
+    height: 50px;
+    object-fit: contain;
+}
+
+@keyframes marquee {
+    to {
+        transform: translateX(-80.6%);
+        -webkit-transform: translateX(-80.6%);
+        -moz-transform: translateX(-80.6%);
+        -ms-transform: translateX(-80.6%);
+        -o-transform: translateX(-80.6%);
+    }
+}
+
+@keyframes marquee-back {
+    to {
+        transform: translateX(0);
+        -webkit-transform: translateX(0);
+        -moz-transform: translateX(0);
+        -ms-transform: translateX(0);
+        -o-transform: translateX(0);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .marquee-parent {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.marquee {
+    border: 2px solid var(--color-secondary);
+    display: flex;
+    gap: 2rem;
+}
+
+.marquee ul {
+    width:max-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+    padding: 1rem 0;
+    animation: marquee 20s linear infinite;
+    border: 2px solid var(--color-tertiary);
+    -webkit-animation: marquee 20s linear infinite;
+}
+
+.marquee li {
+    flex-shrink: 0;
+}
+.marquee img {
+    height: 30px;
+    object-fit: contain;
+}
+
+.marquee li {
+    font-family: var(--font-main);
+    font-size: 1.2rem;
+    color: var(--color-text-bright);
+    text-transform: uppercase;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+        -webkit-transform: translateX(-100%);
+        -moz-transform: translateX(-100%);
+        -ms-transform: translateX(-100%);
+        -o-transform: translateX(-100%);
+}
+} 
+ */
