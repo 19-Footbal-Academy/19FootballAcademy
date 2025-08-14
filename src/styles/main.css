@@ -15,7 +15,7 @@
 
 * {
     border: none;
-    padding: none;
+    padding: 0;
     margin: 0;
     background: transparent;
     font-family: var(--font-main);
