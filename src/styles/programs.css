@@ -1,11 +1,13 @@
 .programs {
     padding: 7rem 3.5rem;
+    padding-bottom: 10rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 2rem;
     background-color: var(--color-muted);
 }
+
 .programs-header {
     display: flex;
     margin-left: auto;
@@ -27,4 +29,70 @@
     color: var(--color-text);
     max-width: 50ch;
     font-weight: 500;
+    margin-bottom: 3rem;
+}
+
+.programs-list {
+    width: min(85vw, 1250px);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+    row-gap: 5rem;
+}
+
+.programs-list .program-item {
+    width: min(450px, 100%);
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 8px;
+    border-radius: 18px;
+    -webkit-border-radius: 18px;
+    -moz-border-radius: 18px;
+    -ms-border-radius: 18px;
+    -o-border-radius: 18px;
+    background: linear-gradient(to right bottom, var(--color-secondary), var(--color-muted), var(--color-accent));
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.9), -2px -2px 8px rgba(255, 255, 255, 0.5);
+}
+
+.programs-list .program-item:nth-child(even) {
+    transform: translateY(5rem);
+    -webkit-transform: translateY(5rem);
+    -moz-transform: translateY(5rem);
+    -ms-transform: translateY(5rem);
+    -o-transform: translateY(5rem);
+}
+
+.programs-list .program-item h3 {
+    font-family: var(--font-main);
+    color: var(--color-tertiary);
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.programs-list .program-item div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    padding-left: 0.5rem;
+    padding-bottom: 1rem;
+}
+.programs-list .program-item p {
+    font-size: 1rem;
+    line-height: 130%;
+    color: var(--color-text-bright);
+    max-width: 40ch;
+    font-weight: 500;
+}
+.programs-list .program-item img {
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+    object-position: center 20%;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
