@@ -26,6 +26,7 @@
     color: var(--color-text-bright);
     box-sizing: border-box;
     list-style-type: none;
+    overscroll-behavior: none;
 }
 
 h2,
