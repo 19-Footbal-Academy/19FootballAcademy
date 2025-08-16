@@ -6,7 +6,7 @@
 .coaches-header {
     width: 100%;
     height: 400px;
-    margin-bottom: 2rem;
+    margin-bottom: 7rem;
     padding-bottom: 2rem;
     background-color: var(--color-muted);
     border-bottom-left-radius: 50%;
@@ -47,4 +47,47 @@
     color: var(--color-text);
     font-size: 1.05rem;
     line-height: 130%;
+}
+
+.coaches-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    justify-content: center;
+    padding-inline: 3.5rem;
+}
+.coach-item{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.coach-item h3 {
+    font-size: 1.5rem;
+    color: var(--color-secondary);
+    font-weight: 800;
+}
+
+.coach-item:nth-child(2) h3 {
+    color: var(--color-primary);
+}
+
+.coach-item:nth-child(3) h3 {
+    color: var(--color-accent);
+}
+.coach-item:nth-child(4) h3 {
+    color: var(--color-text);
+}
+
+.coach-item p {
+    color: var(--color-text-bright);
+    max-width: 30ch;
+}
+
+.coach-item img {
+    width: min(85vw, 350px);
+    height: 400px;
+    object-fit: cover;
+    object-position: center top;
+    mask-image: url('../../public/icons/mask.svg');
+    mask-size: contain;
 }
