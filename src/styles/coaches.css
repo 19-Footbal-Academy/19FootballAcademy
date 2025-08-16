@@ -1,6 +1,7 @@
 .coaches {
     background-color: var(--color-background);
     min-height: 70vh;
+    padding-bottom: 5rem;
 }
 
 .coaches-header {
@@ -80,7 +81,7 @@
 
 .coach-item p {
     color: var(--color-text-bright);
-    max-width: 30ch;
+    max-width: 35ch;
 }
 
 .coach-item img {
