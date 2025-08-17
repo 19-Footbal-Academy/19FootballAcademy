@@ -96,6 +96,50 @@ h3 {
     gap: 1rem;
 }
 
+.join-us>p {
+    font-size: 1.05rem;
+    line-height: 140%;
+}
+
+.join-us p span {
+    font-weight: 800;
+}
+
+.join-us .form-group:not(.radio-group) {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+input,
+textarea {
+    padding: 0.7rem 1.3rem;
+    border: 0.5px solid var(--color-accent);
+    border-radius: 20px;
+    color: var(--color-text-bright);
+    font-family: var(--font-main);
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+textarea {
+    resize: none;
+    min-height: 100px;
+}
+
+label {
+    font-size: 1.05rem;
+    color: var(--color-text);
+    font-weight: 700;
+}
 
 input {
     accent-color: var(--color-accent);
@@ -103,4 +147,37 @@ input {
 
 [type="radio"]+label {
     margin-right: 2rem;
+}
+
+form button {
+    border-radius: 25px;
+    background-color: var(--color-accent);
+    padding: 15px 20px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700;
+    border-radius: 30px;
+    transition: transform 300ms ease-in-out;
+    cursor: pointer;
+    color: var(--color-background);
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    -webkit-transition: transform 300ms ease-in-out;
+    -moz-transition: transform 300ms ease-in-out;
+    -ms-transition: transform 300ms ease-in-out;
+    -o-transition: transform 300ms ease-in-out;
+    box-shadow: inset 6px 6px 15px #b9e0f0,
+        inset -6px -6px 15px #001016;
+}
+
+form button:hover {
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
 }
