@@ -4,7 +4,7 @@
     justify-content: space-between;
 }
 
-h2 {
+.user-action h2 {
     font-family: var(--font-bold);
     font-size: 2rem;
     color: var(--color-primary);
@@ -12,7 +12,7 @@ h2 {
     font-weight: 700;
 }
 
-h3 {
+.user-action h3 {
     font-size: 1.3rem;
     font-weight: 800;
     text-transform: capitalize;
