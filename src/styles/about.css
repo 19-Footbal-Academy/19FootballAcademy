@@ -9,25 +9,23 @@ main {
     position: relative;
     overflow: hidden;
     display: flex;
+    flex-direction: column-reverse;
+    gap: 3rem;
     align-items: center;
-    padding-inline: 3.5rem;
+    padding-inline: 1.5rem;
+    padding-bottom: 3rem;
 }
 
 .about-text {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 0.7rem;
     z-index: 4;
-    transform: translateX(60px);
-    -webkit-transform: translateX(60px);
-    -moz-transform: translateX(60px);
-    -ms-transform: translateX(60px);
-    -o-transform: translateX(60px);
     align-items: flex-start;
 }
 
 .about-text button {
-    padding: 15px 20px;
+    padding: 10px 15px;
     border-radius: 50px;
     background-color: var(--color-secondary);
     -webkit-border-radius: 50px;
@@ -35,7 +33,7 @@ main {
     -ms-border-radius: 50px;
     -o-border-radius: 50px;
     font-family: var(--font-bold);
-    font-size: 1.05rem;
+    font-size: 0.95rem;
     text-transform: capitalize;
     box-shadow: inset 3px 2px 5px rgb(228, 176, 176), inset -3px -2px 5px rgb(17, 0, 0);
     cursor: pointer;
@@ -45,6 +43,7 @@ main {
     -ms-transition: all 300ms ease-in-out;
     -o-transition: all 300ms ease-in-out;
 }
+
 .about-text button:hover {
     transform: scale(1.05);
     -webkit-transform: scale(1.05);
@@ -58,11 +57,11 @@ main {
     text-transform: uppercase;
     color: var(--color-primary);
     font-weight: 900;
-    font-size: 2.5rem;
+    font-size: 1.8rem;
 }
 
 .about p {
-    font-size: 1.1rem;
+    font-size: 0.9rem;
     line-height: 130%;
     color: var(--color-text);
 }
@@ -81,8 +80,8 @@ main {
 .about::before {
     content: '';
     position: absolute;
-    width: 300px;
-    height: 300px;
+    width: 180px;
+    height: 180px;
     border-radius: 50% 34% 5% 29px;
     -webkit-border-radius: 50% 34% 25% 200px / 30% 90% 20% 40%;
     -moz-border-radius: 50% 34% 5% 29px;
@@ -91,15 +90,15 @@ main {
     background-color: var(--color-tertiary);
     bottom: 20px;
     right: 50px;
-    filter: blur(200px);
-    -webkit-filter: blur(200px);
+    filter: blur(100px);
+    -webkit-filter: blur(100px);
     opacity: 0.6;
 }
 
 .blur-circle {
     position: absolute;
-    width: 300px;
-    height: 300px;
+    width: 180px;
+    height: 180px;
     border-radius: 50% 34% 5% 29px;
     -webkit-border-radius: 50% 34% 25% 200px / 30% 90% 20% 40%;
     -moz-border-radius: 50% 34% 5% 29px;
@@ -108,13 +107,13 @@ main {
     background-color: var(--color-secondary);
     top: 0px;
     left: -50px;
-    filter: blur(180px);
-    -webkit-filter: blur(180px);
+    filter: blur(100px);
+    -webkit-filter: blur(100px);
 }
 
 .about-image-block {
-    height: 380px;
-    width: 330px;
+    height: 350px;
+    width: min(300px, 85vw);
     border-radius: 20px;
     border-top-left-radius: 50%;
     border-top-right-radius: 50%;
@@ -216,11 +215,63 @@ main {
 
 .about-image-player {
     z-index: 3;
-    height: 380px;
+    height: 100%;
     object-fit: contain;
     transform: translateX(50px);
     -webkit-transform: translateX(50px);
     -moz-transform: translateX(50px);
     -ms-transform: translateX(50px);
     -o-transform: translateX(50px);
+}
+
+@media screen and (min-width: 680px) {
+    .about {
+        padding-inline: 3.5rem;
+        flex-direction: row;
+        justify-content: center;
+        gap: 0;
+    }
+
+
+    .about-text {
+        gap: 1rem;
+        transform: translateX(60px);
+        -webkit-transform: translateX(60px);
+        -moz-transform: translateX(60px);
+        -ms-transform: translateX(60px);
+        -o-transform: translateX(60px);
+    }
+
+    .about-text button {
+        padding: 15px 20px;
+        font-size: 1.05rem;
+        text-transform: capitalize;
+    }
+
+    .about h2 {
+        font-size: 2.5rem;
+    }
+
+    .about p {
+        font-size: 1.05rem;
+    }
+
+        .about::before {
+            width: 300px;
+            height: 300px;
+            filter: blur(200px);
+            -webkit-filter: blur(200px);
+}
+    
+        .blur-circle {
+            width: 300px;
+            height: 300px;
+            filter: blur(150px);
+            -webkit-filter: blur(150px);
+}
+
+.about-image-block {
+    height: 380px;
+    width: 330px;
+}
 }
