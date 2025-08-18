@@ -1,4 +1,5 @@
 .hero {
+    background: var(--color-background);
     background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)), url('../../public/images/hero.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -9,8 +10,8 @@
 }
 
 .hero header img {
-    height: 75px;
-    width: 75px;
+    height: 50px;
+    width: 50px;
     border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -20,15 +21,15 @@
 }
 
 .hero header {
-    padding: 2rem 3.5rem;
+    padding: 2rem 1.5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
- .join-us-btn {
-    padding: 15px 20px;
-    font-size: 1.1rem;
+.join-us-btn {
+    padding: 10px 15px;
+    font-size: 0.9rem;
     cursor: pointer;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -83,7 +84,7 @@ header .join-us-btn::before {
 }
 
 header .join-us-btn:hover::after {
-    background-color: #222;
+    background-color: #333;
 }
 
 
@@ -96,15 +97,16 @@ header .join-us-btn:hover::after {
 .hero-text {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
-    text-align: right;
+    align-items: flex-start;
+    text-align: left;
     gap: 1rem;
-    padding: 4.5rem 3.5rem;
+    padding: 4.5rem 1.5rem;
 }
+
 .hero-text h1 {
     font-family: var(--font-bold);
     text-transform: uppercase;
-    font-size: 3rem;
+    font-size: 2.3rem;
     font-weight: 800;
     color: var(--color-primary);
 }
@@ -112,6 +114,8 @@ header .join-us-btn:hover::after {
 .hero-text h3 {
     color: var(--color-text);
     font-weight: 500;
+    max-width: 30ch;
+    font-size: 0.9rem;
 }
 
 .hero-text .join-us-btn {
@@ -138,4 +142,38 @@ header .join-us-btn:hover::after {
     -moz-transform: scale(1.1);
     -ms-transform: scale(1.1);
     -o-transform: scale(1.1);
+}
+
+@media screen and (min-width: 680px) {
+    .hero header {
+        padding: 2rem 3.5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .hero header img {
+        height: 75px;
+        width: 75px;
+    }
+
+    .hero-text {
+        align-items: flex-end;
+        text-align: right;
+        padding: 4.5rem 3.5rem;
+    }
+
+    .hero-text h1 {
+        font-size: 3rem;
+    }
+
+    .hero-text h3 {
+        max-width: 40ch;
+        font-size: 1rem;
+    }
+
+    .join-us-btn {
+        padding: 15px 20px;
+        font-size: 1.1rem;
+    }
 }
