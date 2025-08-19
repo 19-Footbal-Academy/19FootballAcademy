@@ -1,22 +1,18 @@
 .company-statements {
     height: 100vh;
     background-color: var(--color-primary);
-    display: grid;
-    grid-template-columns: 0.8fr 1fr;
-    grid-template-rows: 50px 1fr 50px 1fr;
+    display: flex;
+    flex-direction: column;
     gap: 2px;
     border-block: 2px solid var(--color-primary);
 }
 
 .company-statements>div {
     background-color: var(--color-background);
+    flex-shrink: 0;
 }
 
 .company-statements>div:nth-child(5) {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 5;
     position: relative;
     overflow: hidden;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), url('../../public/images/trophy celebration.jpg');
@@ -25,21 +21,21 @@
     flex-direction: column;
     gap: 1rem;
     justify-content: flex-end;
-    padding-left: 3rem;
-    padding-bottom: 2rem;
+    padding-left: 1.5rem;
+    padding-block: 2rem;
 }
 
 .company-statements>div:nth-child(5) h3 {
     color: var(--color-accent);
     font-family: var(--font-bold);
-    font-size: 3rem;
+    font-size: 1.5rem;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 3px;
 }
 
 .company-statements>div:nth-child(5) p {
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: var(--color-text-bright);
     max-width: 45ch;
     line-height: 135%;
@@ -50,10 +46,10 @@
 }
 
 .golden {
-    width: 150px;
-    height: 70px;
+    width: 90px;
+    height: 50px;
     object-fit: cover;
-    vertical-align:middle;
+    vertical-align: middle;
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -85,6 +81,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 1.5rem;
 }
 
 .company-statements h3:not(.company-statements>div:nth-child(5) h3) {
@@ -100,7 +97,7 @@
 }
 
 .company-statements div p:not(.company-statements>div:nth-child(5) p) {
-    font-size: 1.1rem;
+    font-size: 1rem;
     padding: 2rem 1rem;
     border: 0.3px solid var(--color-text);
     border-radius: 30px;
@@ -120,4 +117,74 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 1.5rem;
+}
+
+
+@media screen and (min-width: 680px) {
+    .company-statements {
+        display: grid;
+        grid-template-columns: 0.8fr 1fr;
+        grid-template-rows: 50px 1fr 50px 1fr;
+        gap: 2px;
+        border-block: 2px solid var(--color-primary);
+    }
+
+    .company-statements>div:nth-child(5) {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 5;
+        position: relative;
+        overflow: hidden;
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), url('../../public/images/trophy celebration.jpg');
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        justify-content: flex-end;
+        padding-left: 3rem;
+        padding-bottom: 2rem;
+    }
+
+    .company-statements>div:nth-child(5) h3 {
+        color: var(--color-accent);
+        font-family: var(--font-bold);
+        font-size: 3rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+    }
+
+    .company-statements>div:nth-child(5) p {
+        font-size: 1.1rem;
+        color: var(--color-text-bright);
+        max-width: 45ch;
+        line-height: 135%;
+    }
+
+    .company-statements>div:nth-child(5) p span {
+        font-weight: 900;
+    }
+
+    .golden {
+        width: 150px;
+        height: 70px;
+        object-fit: cover;
+        vertical-align: middle;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        border: 2px solid var(--color-tertiary);
+        object-position: center 25%;
+        box-shadow: 0px 2px 8px rgb(235, 235, 102);
+    }
+
+    .company-statements div p:not(.company-statements>div:nth-child(5) p) {
+        font-size: 1.1rem;
+    }
+
+
 }
