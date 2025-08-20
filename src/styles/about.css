@@ -225,6 +225,47 @@ main {
 }
 
 @media screen and (min-width: 680px) {
+
+
+    .about {
+        padding-inline: 2.5rem;
+    }
+    .about-text button {
+        padding: 15px 20px;
+        font-size: 1.05rem;
+        text-transform: capitalize;
+    }
+
+    .about h2 {
+        font-size: 2.5rem;
+    }
+
+    .about p {
+        font-size: 1.05rem;
+    }
+
+    .about::before {
+        width: 300px;
+        height: 300px;
+        filter: blur(200px);
+        -webkit-filter: blur(200px);
+    }
+
+    .blur-circle {
+        width: 300px;
+        height: 300px;
+        filter: blur(150px);
+        -webkit-filter: blur(150px);
+    }
+
+    .about-image-block {
+        height: 380px;
+        width: 330px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
     .about {
         padding-inline: 3.5rem;
         flex-direction: row;
@@ -241,37 +282,4 @@ main {
         -ms-transform: translateX(60px);
         -o-transform: translateX(60px);
     }
-
-    .about-text button {
-        padding: 15px 20px;
-        font-size: 1.05rem;
-        text-transform: capitalize;
-    }
-
-    .about h2 {
-        font-size: 2.5rem;
-    }
-
-    .about p {
-        font-size: 1.05rem;
-    }
-
-        .about::before {
-            width: 300px;
-            height: 300px;
-            filter: blur(200px);
-            -webkit-filter: blur(200px);
-}
-    
-        .blur-circle {
-            width: 300px;
-            height: 300px;
-            filter: blur(150px);
-            -webkit-filter: blur(150px);
-}
-
-.about-image-block {
-    height: 380px;
-    width: 330px;
-}
 }
