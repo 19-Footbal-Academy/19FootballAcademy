@@ -282,4 +282,9 @@ main {
         -ms-transform: translateX(60px);
         -o-transform: translateX(60px);
     }
+
+    .about p {
+        font-size: 1.1rem;
+        line-height: 150%;
+    }
 }
