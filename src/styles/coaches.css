@@ -1,6 +1,5 @@
 .coaches {
     background-color: var(--color-background);
-    min-height: 70vh;
     padding-bottom: 5rem;
 }
 
@@ -20,6 +19,7 @@
     justify-content: flex-end;
     gap: 0.7rem;
     text-align: center;
+    padding-inline: 1.5rem;
 }
 
 .coaches-header::before {
@@ -39,15 +39,17 @@
 
 .coaches-header h2 {
     font-family: var(--font-bold);
-    font-size: 2.3rem;
+    font-size: 1.5rem;
     color: var(--color-primary);
     text-transform: uppercase;
+    max-width: 40ch;
 }
 
 .coaches-header p {
     color: var(--color-text);
-    font-size: 1.05rem;
+    font-size: 0.9rem;
     line-height: 130%;
+    max-width: 35ch;
 }
 
 .coaches-list {
@@ -57,13 +59,15 @@
     justify-content: center;
     padding-inline: 3.5rem;
 }
-.coach-item{
+
+.coach-item {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
 }
+
 .coach-item h3 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     color: var(--color-secondary);
     font-weight: 800;
 }
@@ -75,6 +79,7 @@
 .coach-item:nth-child(3) h3 {
     color: var(--color-accent);
 }
+
 .coach-item:nth-child(4) h3 {
     color: var(--color-text);
 }
@@ -91,4 +96,22 @@
     object-position: center top;
     mask-image: url('../../public/icons/mask.svg');
     mask-size: contain;
+}
+
+
+@media screen and (min-width: 680px) {
+    .coaches-header h2 {
+        font-size: 2.3rem;
+        max-width: 45ch;
+    }
+
+    .coaches-header p {
+        font-size: 1.05rem;
+        line-height: 140%;
+        max-width: 45ch;
+    }
+
+    .coach-item h3 {
+        font-size: 1.5rem;
+    }
 }
