@@ -29,6 +29,10 @@
     overscroll-behavior: none;
 }
 
+body {
+    background-color: var(--color-background);
+}
+
 h2,
 h3,
 p {
