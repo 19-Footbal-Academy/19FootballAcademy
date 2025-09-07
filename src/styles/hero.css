@@ -1,12 +1,23 @@
 .hero {
     background: var(--color-background);
     background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)), url('../../public/images/hero.jpg');
-    background-size: cover;
+    background-size: 10%;
+    background-position: center;
     background-repeat: no-repeat;
     height: 100dvh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    transition: all 1500ms ease;
+    -webkit-transition: all 1500ms ease;
+    -moz-transition: all 1500ms ease;
+    -ms-transition: all 1500ms ease;
+    -o-transition: all 1500ms ease;
+}
+
+.hero:hover {
+    background-size: 100%;
+    background-position: center top;
 }
 
 .hero header img {
@@ -18,6 +29,7 @@
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
     border: 2px solid var(--color-primary);
+    opacity: 0;
 }
 
 .hero header {
@@ -26,6 +38,8 @@
     justify-content: space-between;
     align-items: center;
 }
+
+
 
 .join-us-btn {
     padding: 10px 15px;
@@ -43,6 +57,7 @@
     position: relative;
     background-color: var(--color-background);
     z-index: 5;
+    opacity: 0;
 }
 
 header .join-us-btn::after {
@@ -109,6 +124,7 @@ header .join-us-btn:hover::after {
     font-size: 2.3rem;
     font-weight: 800;
     color: var(--color-primary);
+    opacity: 0;
 }
 
 .hero-text h3 {
@@ -116,6 +132,7 @@ header .join-us-btn:hover::after {
     font-weight: 500;
     max-width: 30ch;
     font-size: 0.9rem;
+    opacity: 0;
 }
 
 .hero-text .join-us-btn {
