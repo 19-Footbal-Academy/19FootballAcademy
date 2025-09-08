@@ -1,8 +1,7 @@
 .hero {
     background: var(--color-background);
     background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)), url('../../public/images/hero.jpg');
-    background-size: 10%;
-    background-position: center;
+    background-size: cover;
     background-repeat: no-repeat;
     height: 100dvh;
     display: flex;
@@ -13,12 +12,9 @@
     -moz-transition: all 1500ms ease;
     -ms-transition: all 1500ms ease;
     -o-transition: all 1500ms ease;
+    clip-path: polygon(45% 45%, 60% 45%, 60% 65%, 45% 65%);
 }
 
-.hero:hover {
-    background-size: 100%;
-    background-position: center top;
-}
 
 .hero header img {
     height: 50px;
