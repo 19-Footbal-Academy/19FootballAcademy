@@ -35,7 +35,33 @@
     align-items: center;
 }
 
+.intro-text {
+    font-size: clamp(1.3rem, 7vw, 5rem);
+    color: var(--color-text);
+        font-family: var(--font-bold);
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 3px;
+    width: 100%;
+    text-transform: uppercase;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -o-transform: translateX(-50%) translateY(-50%);
+    z-index: 3;
+    opacity: 0;
+}
 
+.intro-text span {
+    font-family: var(--font-bold);
+    color: var(--color-text);
+    font-weight: 700;
+    letter-spacing: 3px;
+}
 
 .join-us-btn {
     padding: 10px 15px;
