@@ -1,7 +1,6 @@
-const { animate, utils, text, stagger, createSpring } = anime;
-gsap.registerPlugin(SplitText);
-
 document.addEventListener("DOMContentLoaded", () => {
+  const { animate, utils, text, stagger, createSpring } = anime;
+  gsap.registerPlugin(SplitText);
   utils.set(".intro-text", {
     opacity: 1,
   });
