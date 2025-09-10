@@ -222,6 +222,11 @@ main {
     -moz-transform: translateX(50px);
     -ms-transform: translateX(50px);
     -o-transform: translateX(50px);
+    transition: all 200ms ease;
+    -webkit-transition: all 200ms ease;
+    -moz-transition: all 200ms ease;
+    -ms-transition: all 200ms ease;
+    -o-transition: all 200ms ease;
 }
 
 @media screen and (min-width: 680px) {
