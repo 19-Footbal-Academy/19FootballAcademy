@@ -37,8 +37,8 @@
 
 .intro-text {
     font-size: clamp(1.3rem, 7vw, 5rem);
-    color: var(--color-text);
-        font-family: var(--font-bold);
+    color: var(--color-text-bright);
+    font-family: var(--font-bold);
     text-align: center;
     font-weight: 700;
     letter-spacing: 3px;
@@ -58,7 +58,7 @@
 
 .intro-text span {
     font-family: var(--font-bold);
-    color: var(--color-text);
+    color: var(--color-text-bright);
     font-weight: 700;
     letter-spacing: 3px;
 }
@@ -149,6 +149,14 @@ header .join-us-btn:hover::after {
     opacity: 0;
 }
 
+.hero-text h1 span {
+    font-family: var(--font-bold);
+    text-transform: uppercase;
+    font-size: 2.3rem;
+    font-weight: 800;
+    color: var(--color-primary);
+}
+
 .hero-text h3 {
     color: var(--color-text);
     font-weight: 500;
@@ -202,7 +210,8 @@ header .join-us-btn:hover::after {
         padding: 4.5rem 2rem;
     }
 
-    .hero-text h1 {
+    .hero-text h1,
+    .hero-text h1 span {
         font-size: 3rem;
     }
 
@@ -227,7 +236,8 @@ header .join-us-btn:hover::after {
         padding: 4.5rem 3.5rem;
     }
 
-    .hero-text h1 {
+    .hero-text h1,
+    .hero-text h1 span {
         font-size: 3.5rem;
     }
 
