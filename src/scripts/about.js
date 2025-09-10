@@ -12,18 +12,21 @@ function setAboutPageAnimation() {
     animationUpperHeightBoundary - animationLowestXBoundary;
   const animationHeightUnitValue = animationRange / sectionHeight;
   const animationXUnitValue = animationXRange / sectionWidth;
+  const originalTranslateXValue = 50;
   const playerImage = document.querySelector(".about-image-player");
   aboutSection.addEventListener("pointermove", (event) => {
-    // playerImage.animate(``)
-    playerImage.style.transform = `translateX(${
-      50 +
-      (animationXUnitValue * (sectionWidth - event.clientX) +
-        animationLowestXBoundary)
-    }px) translateY(${
+    const yAxisValue =
       animationHeightUnitValue * (sectionHeight - event.offsetY) +
-      animationLowestHeightBoundary
-    }px)`;
-    // console.log(event.clientX);
+      animationLowestHeightBoundary;
+    const xAxisValue =
+      originalTranslateXValue +
+      (animationXUnitValue * (sectionWidth - event.clientX) +
+        animationLowestXBoundary);
+    const playerImageAnimationKeyframe = [
+      { transform: `translateX(${xAxisValue}px) translateY(${yAxisValue}px)` },
+    ];
+    const animationOptions = { duration: 300, easing: "ease", fill: 'forwards' };
+    playerImage.animate(playerImageAnimationKeyframe, animationOptions);
   });
 }
 
