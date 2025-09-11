@@ -45,11 +45,8 @@ main {
 }
 
 .about-text button:hover {
-    transform: scale(1.05);
-    -webkit-transform: scale(1.05);
-    -moz-transform: scale(1.05);
-    -ms-transform: scale(1.05);
-    -o-transform: scale(1.05);
+    filter: hue-rotate(20deg) brightness(1.2);
+    -webkit-filter: hue-rotate(20deg) brightness(1.2);
 }
 
 .about h2 {
