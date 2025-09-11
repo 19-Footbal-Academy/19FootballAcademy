@@ -39,12 +39,13 @@ p {
     max-width: 45ch;
 }
 
-.company-name {
+.company-name,
+.company-name > span {
     text-transform: capitalize;
     background: linear-gradient(to right, var(--color-secondary), var(--color-accent));
     background-clip: text;
-    color: transparent;
     font-weight: 800;
+    color: transparent;
     -webkit-background-clip: text;
     text-transform: uppercase;
 }

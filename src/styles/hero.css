@@ -63,6 +63,7 @@
     letter-spacing: 3px;
 }
 
+
 .join-us-btn {
     padding: 10px 15px;
     font-size: 0.9rem;
@@ -157,12 +158,20 @@ header .join-us-btn:hover::after {
     color: var(--color-primary);
 }
 
-.hero-text h3 {
+.hero-text h3, .hero-text h3 span {
     color: var(--color-text);
     font-weight: 500;
     max-width: 30ch;
     font-size: 0.9rem;
-    opacity: 0;
+}
+
+
+.hero-text h3 .company-name span {
+    color: transparent;
+    font-weight: 700;
+    opacity: 1;
+    background: linear-gradient(to right, var(--color-secondary), var(--color-accent));
+    background-clip: text;
 }
 
 .hero-text .join-us-btn {
@@ -215,7 +224,7 @@ header .join-us-btn:hover::after {
         font-size: 3rem;
     }
 
-    .hero-text h3 {
+    .hero-text h3, .hero-text h3 span {
         max-width: 40ch;
         font-size: 1rem;
     }
@@ -241,7 +250,7 @@ header .join-us-btn:hover::after {
         font-size: 3.5rem;
     }
 
-    .hero-text h3 {
+    .hero-text h3, .hero-text h3 span {
         max-width: 45ch;
         font-size: 1.1rem;
     }
