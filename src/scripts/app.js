@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
     duration: 1.3,
   });
 
-  console.log(lenis.options)
+  console.log(lenis.options);
   const { animate, utils, text, stagger, createSpring } = anime;
   gsap.registerPlugin(SplitText);
   utils.set(".intro-text", {
@@ -68,10 +68,10 @@ document.addEventListener("DOMContentLoaded", () => {
     );
 
   animate(".hero-text .join-us-btn", {
-    opacity: { to: 1, duration: 200 },
-    y: {
+    opacity: { to: 1, duration: 100 },
+    x: {
       to: ["40px", "0"],
-      duration: 200,
+      duration: 100,
     },
     delay: 4000,
   });
@@ -117,5 +117,15 @@ document.addEventListener("DOMContentLoaded", () => {
       "<"
     );
 
-  // gsap.from('')
+  animate("feDisplacementMap", {
+    scale: [
+      { to: 20000, duration: 500 },
+      { to: 10000, duration: 1000 },
+      { to: 7000, duration: 1500 },
+      { to: 15000, duration: 1500 },
+    ],
+    loop: true,
+    alternate: true,
+  });
+
 });
