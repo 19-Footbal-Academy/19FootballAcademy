@@ -1,4 +1,10 @@
 document.addEventListener("DOMContentLoaded", () => {
+  const lenis = new Lenis({
+    autoRaf: true,
+    duration: 1.3,
+  });
+
+  console.log(lenis.options)
   const { animate, utils, text, stagger, createSpring } = anime;
   gsap.registerPlugin(SplitText);
   utils.set(".intro-text", {
