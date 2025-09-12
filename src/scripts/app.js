@@ -52,7 +52,9 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   // hero text h3 split and animation
-
+utils.set(".hero-text h3", {
+    opacity: 1,
+  });
   text
     .split(".hero-text h3", {
       lines: { wrap: "clip" },
